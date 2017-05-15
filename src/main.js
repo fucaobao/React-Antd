@@ -30,6 +30,8 @@ import myLayout from './components/layout/layout.js'
 //sub2 --- END
 
 //sub3 --- BEGIN
+import myBackTop from './components/navigation/backtop'
+import myDropdown from './components/navigation/dropdown'
 //sub3 --- END
 
 //sub4 --- BEGIN
@@ -55,6 +57,7 @@ import mySpin from './components/feedback/spin'
 
 //sub7 --- BEGIN
 import myFocus from './components/other/foucs.js'
+import myAnchor from './components/other/anchor'
 //sub7 --- END
 
 const ACTIVE = { color: 'red' }
@@ -200,8 +203,8 @@ render((
             {/*sub3*/}
             <Route path="myAffix" component={myFocus} />
             <Route path="myBreadcrumb" component={myFocus} />
-            <Route path="myBackTop" component={myFocus} />
-            <Route path="myDropdown" component={myFocus} />
+            <Route path="myBackTop" component={myBackTop} />
+            <Route path="myDropdown" component={myDropdown} />
             <Route path="myMenu" component={myFocus} />
             <Route path="myPagination" component={myFocus} />
             <Route path="mySteps" component={myFocus} />
@@ -246,7 +249,7 @@ render((
             <Route path="myPopconfirm" component={myPopconfirm} />
             <Route path="mySpin" component={mySpin} />
             {/*sub7*/}
-            <Route path="myAnchor" component={myFocus} />
+            <Route path="myAnchor" component={myAnchor} />
             <Route path="myLocaleProvider" component={myFocus} />
             <Route path="myFocus" component={myFocus} />
         </Route>
